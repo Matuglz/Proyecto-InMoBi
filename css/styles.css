@@ -1,0 +1,91 @@
+:root {
+    --main-color: #b61538;
+    --secundary-color: #82122b;
+    --white: rgb(236, 235, 235);
+}
+
+.navegacion {
+    padding: 0.3rem;
+    background-color: var(--main-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.boton-iniciar {
+    color: var(--white);
+    border-radius: 1rem;
+    border: none;
+    padding: 0.6rem;
+    background-color: var(--secundary-color);
+}
+
+.boton-iniciar:hover,
+.boton-iniciar:active {
+    border: 2px var(--white) solid;
+    padding: 0.5rem;
+}
+
+.navbar-nav {
+    font-size: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--white);
+}
+
+/*Offcanvas*/
+
+.offcanvas {
+    background-color: var(--main-color);
+}
+
+/*Contenedor principal*/
+.container-fluid2 {
+    background-image: url(../img/img-principal.jpg);
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container-fluid2,
+h2 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.div-botones {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.boton-principal {
+    color: var(--white);
+    padding: 0.6rem;
+    background-color: var(--secundary-color);
+}
+
+.div-formularios {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width:992px) {
+    .container-fluid2 {
+        padding: 4rem;
+    }
+    .div-formularios {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .div-botones {
+        gap: 2rem;
+    }
+    
+}
