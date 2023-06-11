@@ -11,13 +11,15 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="./css/styles.css">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/53a5609ba1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navegacion">
         <div class="container-fluid">
             <!--H1-->
-            <h1>InMoBi</h1>
+            <h1><i class="fa-solid fa-house-chimney"></i>InMoBi</h1>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -67,11 +69,19 @@
         <section class="contenedor-principal">
             <h2 class="titulo-secundario text-center">Mas que un hogar</h2>
             <div class="div-botones">
-                <button class="btn boton-principal"> Quiero comprar</button>
-                <button class="btn boton-principal">Quiero alquilar</button>
-                <button class="btn boton-principal">Quiero vender</button>
+                <button class="btn boton-principal btn-outline-danger" data-bs-toggle="button" type="button">
+                    <span class="d-none d-md-inline">Quiero comprar</span>
+                    <span class="d-md-none">Comprar</span>
+                </button>
+                <button class="btn boton-principal btn-outline-danger" data-bs-toggle="button" type="button">
+                    <span class="d-none d-md-inline">Quiero alquilar</span>
+                    <span class="d-md-none">Alquilar</span></button>
+                <button class="btn boton-principal btn-outline-danger" data-bs-toggle="button" type="button">
+                    <span class="d-none d-md-inline">Quiero vender</span>
+                    <span class="d-md-none">Vender</span>
+                </button>
             </div>
-            <div class="div-formularios">
+            <div class="div-formularios container">
                 <input class="form-control" type="text" placeholder="¿Donde?" aria-label="default input example">
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Provincia</option>
@@ -81,38 +91,190 @@
                     <option value="4">Corrientes</option>
                     <option value="5"></option>
                 </select>
-                <button class="btn boton-principal">++</button>
+                <button class="btn boton-principal"><i class="fa-solid fa-magnifying-glass-location"></i></button>
+            </div>
+        </section>
+        <hr>
+
+        <!--Seccion principal screen>992px-->
+        <section class="container d-none d-lg-block">
+            <div class="row justify-content-md-start gap-5">
+                <article class="card mb-3 col-9" style="max-width:50vw;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/apartamento.svg" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-start ms-2">
+                                <h3 class="card-title">Vacaciones de ensueño</h3>
+                                <p class="card-text">
+                                    Descubre nuestros excepcionales apartamentos vacacionales, diseñados para ofrecerte
+                                    una experiencia inolvidable. Con ubicaciones privilegiadas, comodidades de lujo y un
+                                    servicio impecable, nuestros apartamentos son el destino perfecto para tus
+                                    vacaciones. Disfruta de espacios amplios, vistas panorámicas y acceso a atracciones
+                                    cercanas. ¡Haz de tus vacaciones un momento inigualable en nuestros apartamentos de
+                                    ensueño!</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <img class="col-3" src="./img/vacaciones.svg" alt="">
+            </div>
+            <div class="row justify-content-md-end  gap-5">
+                <img class="col-3" src="./img/venta2.svg" alt="">
+                <article class="card mb-3 col-9" style="max-width: 50vw;">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body text-end">
+                                <h3 class="card-title me-2">Venta efectiva</h3>
+                                <p class="card-text ">Confía en nosotros para vender tu propiedad de manera efectiva.
+                                    Nuestro servicio de venta inmobiliaria se enfoca en maximizar el valor de tu casa,
+                                    utilizando estrategias de marketing sólidas y una red de compradores potenciales.
+                                    Nuestro equipo de expertos te brindará asesoramiento personalizado, transparencia en
+                                    todas las etapas del proceso y un compromiso absoluto para lograr resultados
+                                    exitosos. Confía en nuestra experiencia y dedícate a lo que importa mientras
+                                    nosotros nos encargamos de la venta de tu casa.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./img/For sale-rafiki.svg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--Seccion principal screen<992px-->
+        <section class="container">
+            <div class="row justify-content-center row-cols-1 d-lg-none g-4">
+                <article class="col-10">
+                    <div class="card h-100">
+                        <img src="./img/apartamento992.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Vacaciones de ensueño</h3>
+                            <p class="card-text">
+                                Vacaciones inolvidables en nuestros excepcionales apartamentos vacacionales, con
+                                ubicaciones
+                                privilegiadas y comodidades de lujo.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-10">
+                    <div class="card h-100">
+                        <img src="./img/casa-venta-992.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Venta efectiva</h3>
+                            <p class="card-text">
+                                Confía en nuestra experiencia para vender tu propiedad de manera efectiva, maximizando
+                                su
+                                valor con estrategias sólidas y asesoramiento personalizado.</p>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <section class="contenedor-articulos">
-            <article class="articulo">
-                <div class="bg-image">
+        <hr class="my-5">
 
+        <section>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 m-5">
+                <div class="col">
+                    <div class="tarjeta h-100">
+                        <img src="./img/casa.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Busca tu casa ideal</h3>
+                            <p class="card-text">Encuentra tu hogar ideal con nosotros. Nuestra inmobiliaria te ofrece
+                                una amplia selección de propiedades, asesoramiento experto y un servicio al cliente
+                                excepcional para ayudarte a encontrar la casa de tus sueños.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="texto-articulo">
-                    <h3 class="titulo-articulo">InMoBi hoteles</h3>
-                    <p>Hoteles 5 estrellas, el mejor servcio que podes encontrar
-                    </p>
-                    <button class="btn boton-principal">Conoce mas</button>
+                <div class="col">
+                    <div class="tarjeta h-100">
+                        <img src="./img/customer-service.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Servicio al cliente excepcional</h3>
+                            <p class="card-text">
+                                En nuestra inmobiliaria, el cliente es nuestra prioridad absoluta. Brindamos un servicio
+                                excepcional, escuchando tus necesidades y ofreciendo soluciones personalizadas para
+                                ayudarte a encontrar la propiedad perfecta.</p>
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article class="articulo">
-                <div class="bg-image">
-
+                <div class="col d-none d-lg-block">
+                    <div class=" tarjeta h-100">
+                        <img src="./img/Architect_Flatline.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Crea el hogar de tus sueños</h3>
+                            <p class="card-text">
+                                Con nuestro servicio de diseño de hogar, convierte tus sueños en realidad. Nuestro
+                                equipo de expertos te ayudará a crear un espacio único y personalizado que refleje tu
+                                estilo y se adapte a tus necesidades.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="texto-articulo">
-                    <h3 class="titulo-articulo">InMoBi hoteles</h3>
-                    <p>Inmuebles extraordinarios dirigidos y supervisados por Corredores Públicos matriculados,
-                        especializados en la compra y venta de propiedades premium
-                    </p>
-                    <button class="btn boton-principal">Conoce mas</button>
-                </div>
-            </article>
-
-
+            </div>
         </section>
     </main>
+    <hr class="my-5">
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h2><i class="fa-solid fa-house-chimney"></i>InMoBi</h2>
+                    <p>Teléfono: +1234567890</p>
+                    <p>Correo electrónico: info@InMoBi.com</p>
+                    <p>Dirección: Calle Principal 123, Ciudad</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5>Menú de navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="nav-link" href="#">Home</a></li>
+                        <li><a class="nav-link" href="#">Comprar</a></li>
+                        <li><a class="nav-link" href="#">Vender</a></li>
+                        <li><a class="nav-link" href="#">Alquilar</a></li>
+                        <li><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="nav-link" href="https://www.facebook.com/inmobiliaria"
+                                target="_blank">Facebook</a></li>
+                        <li><a class="nav-link" href="https://www.twitter.com/inmobiliaria" target="_blank">Twitter</a>
+                        </li>
+                        <li><a class="nav-link" href="https://www.instagram.com/inmobiliaria"
+                                target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Políticas</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="nav-link" href="#">Política de privacidad</a></li>
+                        <li><a class="nav-link" href="#">Términos de uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="text-center">Suscribirte al catálogo de propiedades</h5>
+                    <form action="/suscripcion" method="POST" class="form-inline">
+                        <div class="input-group mb-3">
+                            <input type="email" name="email" class="form-control"
+                                placeholder="Ingresa tu correo electrónico" required>
+                            <button type="submit" class="btn boton-principal btn-outline-danger">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2023 Inmobiliaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
 
 
     <!--Bootstrap-->

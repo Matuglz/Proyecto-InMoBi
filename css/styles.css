@@ -2,8 +2,10 @@
     --main-color: #b61538;
     --secundary-color: #82122b;
     --white: rgb(236, 235, 235);
+    --white2: rgb(231, 226, 195);
 }
-body{
+
+body {
     background-color: var(--main-color);
 }
 
@@ -14,6 +16,17 @@ body{
 
 h1 {
     font-size: 3rem;
+    display: flex;
+}
+
+.btn:hover {
+
+    transform: scale(1.05);
+    color: white;
+}
+
+.btn:active {
+    background-color: var(--main-color);
 }
 
 .boton-iniciar {
@@ -57,12 +70,14 @@ h1 {
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
+    height: 40vh;
 }
 
 .container-fluid2,
 h2 {
     color: var(--white);
     font-weight: 700;
+    text-shadow: 1px 1px 4px var(--secundary-color);
 }
 
 .div-botones {
@@ -100,41 +115,18 @@ h2 {
 }
 
 /*Articulos*/
-/*    box-shadow: -115px -3px 3px 25px rgba(189,93,93,0.75);*/
-.contenedor-articulos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:3rem;
-
+/*Animaciones*/
+.tarjeta {
+    color: var(--white);
 }
 
-.bg-image {
-    background-image: url(../img/articulo-hotel.jpg);
-    height: 15rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: .5rem;
+.tarjeta:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
 }
 
-.articulo {
-    margin-top: 2rem;
-    width: 80vw;
-    height:30vh;
-}
-
-.texto-articulo{
-    background-color: var(--white);
-    border-radius: 1rem;
-    margin: 2rem;
-    margin-top: -3rem;
-    padding: 2rem;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-}
-
-.titulo-articulo{
-    font-weight: 700;
+@media (min-width:576px) {
+    .articulo {
+        margin-bottom: 3rem;
+    }
 }
