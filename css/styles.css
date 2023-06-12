@@ -52,7 +52,15 @@ h1 {
 .offcanvas {
     background-color: var(--main-color);
 }
-
+.card-color{
+    background-color: var(--main-color);
+}
+.dropdown-menu{
+    background-color: var(--sencundary-color);
+}
+label{
+    color: var(--white);
+}
 /*Contenedor principal*/
 .contenedor-principal {
     background-image: url(../img/img-principal.jpg);
